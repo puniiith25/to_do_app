@@ -41,17 +41,44 @@ class _HomeState extends State<Home> {
                   color: Colors.white,
                   fontWeight: FontWeight.w500),
             ),
+            SizedBox(
+              height: 10.0,
+            ),
             Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                Container(
-                  child: Text(
-                    "Today",
-                    style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold),
+                Material(
+                  elevation: 5,
+                  borderRadius: BorderRadius.circular(20),
+                  child: Container(
+                    padding:
+                        EdgeInsets.symmetric(horizontal: 20.0, vertical: 5.0),
+                    decoration: BoxDecoration(
+                        color: Color(0xff3dffe3),
+                        borderRadius: BorderRadius.circular(20)),
+                    child: Text(
+                      "Today",
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold),
+                    ),
                   ),
-                )
+                ),
+                Text(
+                  "Tomorrow",
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold),
+                ),
+                Text(
+                  "Next Week",
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold),
+                ),
               ],
             )
           ],
